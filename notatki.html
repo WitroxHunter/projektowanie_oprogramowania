@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatki</title>
+    <link rel="shortcut icon" href="ico.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="flexmain">
+        <div class="prawo"><font size="6">&nbsp;&nbsp;Notatki</font></div>
+        
+        <div class="lewo">
+            <div onclick="window.location='index.html';"><img src="icons/icon_house.png" width="35px" height="35px"><font size="5">&nbsp;Strona główna</font></div>
+            <div onclick="window.location='notatki.html';"><img src="icons/icon_notes.png" width="35px" height="35px"><font size="5">&nbsp;Notatki</font></div>
+            <div onclick="window.location='Sortowania.html';"><img src="icons/icon_source.png" width="35px" height="35px"><font size="5">&nbsp;Sortowania</font></div>  
+            <div onclick="window.location='Algorytmy.html';"><img src="icons/icon_webhook.png" width="35px" height="35px"><font size="5">&nbsp;Algorytmika</font></div>
+        </div>
+    </div>
+
+<div class="giga">
+    <section style="background-image: url(images/notes.jpg);">
+        <div class="tytul" style="background-color: rgba(77, 38, 38, 0.4);"><br><center>
+        <font size="6" color="white">Notatki<br><hr width="20%"></font>
+        <font size="8" color="white">Projektowanie Oprogramowania</font>
+        </center></div>    
+    </section>
+
+    <article>
+        <h1>Przeszukiwanie liniowe</h1>
+        <font size="5" face="coco">
+        najprostszy algorytm wyszukiwania informacji w ciągu danych, np. zapisanych w tablicy lub na liście. Polega na porównywaniu żądanego klucza z kolejnymi kluczami z sekwencji danych – wyszukiwanie kończy się powodzeniem, gdy zostanie znaleziony klucz, albo niepowodzeniem, gdy zostaną przejrzane wszystkie klucze.
+        <br><br>
+            <i>Pseudokod:<hr width="30%"></font><font size="4" face="light">
+            szukany_klucz := określona wartość;<br>
+            znaleziony_indeks := ?;<br>
+            for index := 1 to n do<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if tablica[index].klucz = szukany_klucz then<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{znaleziono element o podanym kluczu, zapamiętujemy pozycję w tablicy}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;znaleziony_indeks := index;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; { koniec iterowania}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;end;</i><br></font><br><br>
+        <font size="5" face="coco">
+            Wyszukiwanie liniowe może być jedynym sposobem wyszukiwania, gdy nie wiadomo niczego na temat kolejności kluczy.<br>
+            Dla dużej liczby danych algorytm jest bardzo nieefektywny, jednak gdy danych jest względnie mało, jest z powodzeniem stosowany (np. w tablicach mieszających, w których problem kolizji rozwiązuje się metodą łańcuchową).<br>
+            Dodatkowo jeśli wiadomo, że pewne klucze mogą być wyszukiwane częściej niż inne, można modyfikować kolejność danych, tak aby ponowne wyszukiwanie tego samego klucza kończyło się powodzeniem szybciej. Metoda ta nosi nazwę move-to-front, Donald Knuth wymienia w swojej pracy Sztuka programowania dwie strategie:<br>
+        </font><font size="4" face="coco"><br><ul>
+            <li>natychmiastowe przesunięcie znalezionego elementu na początek sekwencji,<br></li>
+            <li>przesunięcie tylko o jedną pozycję w stronę początku sekwencji.</li>
+        </ul></font>
+        
+    
+    </article>
+</div>
+<footer><font color="white"><center>2022 Wiktor Jankiewicz 2PR</center></font></footer>
+</body>
+</html>

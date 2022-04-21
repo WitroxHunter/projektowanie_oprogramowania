@@ -1,0 +1,182 @@
+
+
+.flexmain {
+    position: fixed;
+    display: flex;
+    background-color: #f2f2f2;
+    border-top: 1px solid rgb(0, 0, 0);
+    justify-content: center;
+    font-family: coco;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 3px solid rgb(197, 197, 197);
+}
+
+.lewo {
+    justify-content: flex-end;
+    display: flex;
+    flex-basis: 60%;
+}
+.lewo > div {
+    background-color: #f2f2f2;
+    width: 240px;
+    font-size: 30px;
+    border-right: 3px solid #242526;
+    cursor: pointer;
+    display: flex;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.lewo > div:hover {
+    background-color: #d4d4d4;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.prawo {
+    justify-content: flex-start;
+    display: flex;
+    flex-basis: 40%;
+}
+
+.prawo > img {
+    height: 50px;
+    width: 50px;
+}
+
+body {
+    background-color: #18191A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: coco;
+    src: url(Coco-Sharp-Bold-trial.ttf);
+}
+@font-face {
+    font-family: heavy;
+    src: url(Coco-Sharp-Heavy-trial.ttf);
+}
+@font-face {
+    font-family: lato-black;
+    src: url(Lato-Black.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(Lato-Light.ttf);
+}
+
+footer {
+    width: 100%;
+    background-color: #3A3B3C;
+    line-height: 30px;
+    bottom: 0;
+    font-family: lato-black;
+    height: 30px;
+}
+
+section {
+    width: 100%;
+    flex-basis: 100%;
+    height: 800px;
+    background-size: 100%;
+    background-color: rgb(173, 173, 173);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+article {
+    box-shadow: #f2f2f2 0px 0px 20px 0px;
+    height:1000px;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.tytul {
+    position: relative;
+    line-height: 50px;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 600px;
+    font-family: coco;
+}
+
+span.tytul {
+    font-size: 30px;
+    color: white;
+    font-family: bold;
+}
+
+.buttons {
+    width: 60%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1em;
+    
+}
+
+.button {
+    height: 95%;
+    width: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: rgb(88, 125, 155) 0px 0px 10px 0px;
+    background-color: rgb(212, 212, 212);
+    background-blend-mode: multiply;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(212, 212, 212, 0.0);
+    background-blend-mode: multiply;
+    transition: 0.2s;
+}
+
+.buttontop {
+    position: relative;
+    top: 80%;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(155, 212, 255, 0.92);
+    font-family: coco;
+    font-size: 30px;
+    border-radius: 0px 0px 15px 15px;
+    text-decoration: none;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black;
+    color: white;
+    
+}
+
+a:link { text-decoration: none; color: black;}
+a:visited { text-decoration: none; color: black;}
+a:hover { text-decoration: none; color: black;}
+a:active { text-decoration: none; color: black;}
+
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-thumb {background: #cacaca; border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover {background: #aaaaaa; }
+::-webkit-scrollbar-track {background: #f2f2f2;}
+
+h1 {
+    font-family: coco;
+    font-size: 40px;
+    color: white; 
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: black;
+}
+
+
